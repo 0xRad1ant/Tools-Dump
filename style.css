@@ -1,11 +1,21 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+@font-face {
+    font-family: 'Kode Mono';
+    src: url('fonts/kode-mono.woff2') format('woff2'),
+         url('fonts/kode-mono.woff') format('woff');
+    font-weight: 400; /* Adjust weight if needed */
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Kode Mono', monospace;
+    background-color: #181717e8;
+    color: #f1ecec;
     margin: 0;
     padding: 0;
-}
-
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust weight if needed */
+  }
+  
 header {
     background-color: #0077b6;
     color: #fff;
@@ -22,17 +32,20 @@ header {
 h1 {
     text-align: center;
     margin-bottom: 1em;
+    font-size:60px;
 }
 
 h2 {
     color: #0077b6;
     border-bottom: 2px solid #0077b6;
     padding-bottom: 0.5em;
+    font-size: 30px;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    font-size: 20px;
 }
 
 ul li {
@@ -129,7 +142,7 @@ form button:hover {
 }
 
 
-/* styles for highlight*/
+/* styles for highlighting*/
 .highlight {
     background-color: #df1717;
     padding: 10px;
